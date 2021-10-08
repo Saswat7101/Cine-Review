@@ -270,6 +270,16 @@ $(document).ready(function () {
     $("#movie-grid").html(genreHTML);
     $("#movieGenreLabel").html("Thriller");
   });
+  $("#movies").click(function () {
+    getMoviesByGenre(14);
+    $("#movie-grid").html(genreHTML);
+    $("#movieGenreLabel").html("Movies");
+  });
+  $("#Web-s").click(function () {
+    getMoviesByGenre(14);
+    $("#movie-grid").html(genreHTML);
+    $("#movieGenreLabel").html("Web Series");
+  });
 
   // Search Function
   //Run function searchMovies AFTER an input has been submitted. Submit form first.
